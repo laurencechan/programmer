@@ -13,7 +13,7 @@ mylist = [int(i) for i in raw_input()]
 
 def fiter_single_num(mylist):
     """算法复杂的方法"""
-    mylist_small = list(set(mylist))
+    mylist_small = set(mylist)
     for i in mylist_small:
         mylist.remove(i)
         for j in range(len(mylist)):
